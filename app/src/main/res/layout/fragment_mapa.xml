@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2pt"
+    android:orientation="vertical">
+    <!--fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" /-->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/marker_digas" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp">
+            <Button
+                android:id="@+id/buttonFrecuente"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="P.FRECUENTE"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/ronded_button1"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  ">
+            </TextView>
+            <Button
+                android:id="@+id/buttonSiguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="SIGUIENTE"
+                android:textColor="@color/white"
+                android:background="@drawable/ronded_button1"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/buttonMostrarFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="SIGUIENTE"
+                android:textColor="@color/white"
+                android:background="@drawable/ronded_button1"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp">
+            <EditText
+                android:id="@+id/editTextBuscarDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint=" Ingrese calle/distrito"
+                android:ems="9"
+                android:textColor="#000000"
+                android:background="#FFFFFF">
+                <requestFocus />
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="  ">
+            </TextView>
+            <ImageButton
+                android:id="@+id/imgBuscarDireccion"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ronded_button1"
+                android:src="@drawable/ic_action_search" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" ">
+            </TextView>
+            <ImageButton
+                android:id="@+id/imgLlamar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ronded_button1"
+                android:src="@drawable/phone" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

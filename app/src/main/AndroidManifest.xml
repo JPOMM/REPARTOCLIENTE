@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"  package="com.efienza.cliente">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.efienza.cliente.custom.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/reaparto"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateHidden|adjustResize"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <meta-data android:name="com.google.android.gms.version"  android:value="@integer/google_play_services_version" />
+        <activity android:name="pe.com.visanet.lib.VisaNetPaymentActivity" android:theme="@android:style/Theme.Dialog"  android:screenOrientation="portrait"/>
+        <!--meta-data android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCthk9o4lztRCoH4ZDLlvNNWVU9c7IjD1A"/--> <!--PRODUCCION-->
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAkCpC0RndETbYGLjXWxyaR4DKMid8hbGY"/> <!--DESARROLLO-->
+        <activity android:name="com.efienza.cliente.acitivities.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.efienza.cliente.acitivities.LoginActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.efienza.cliente.acitivities.RegisterActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.efienza.cliente.acitivities.HomeActivity"
+            android:screenOrientation="portrait"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/hint" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f56abfb6e55df26db9a05ad869ffca73b9c13ab6" />
+        <receiver android:name="com.efienza.cliente.broadcastReceiver.OnAlarmReceiver" ></receiver>
+        <receiver
+            android:name="com.efienza.cliente.broadcastReceiver.BootReceiver"
+            android:label="Boot Receiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.efienza.cliente.services.LocationService" ></service>
+
+    </application>
+</manifest>

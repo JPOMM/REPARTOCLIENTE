@@ -1,0 +1,166 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATOS DE ENTREGA DE PEDIDOS"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            app:counterEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#000000">
+
+            <Button
+                android:id="@+id/editOrigen"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourty_five"
+                android:layout_margin="@dimen/five"
+                android:background="@drawable/rounded_view"
+                android:text="Ingresar dirección de Origen"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF"
+                android:textCursorDrawable="@drawable/cursor" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            app:counterEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#000000">
+
+            <Button
+                android:id="@+id/editDestino"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourty_five"
+                android:layout_margin="@dimen/five"
+                android:background="@drawable/rounded_view"
+                android:text="Ingresar dirección de Destino"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF"
+                android:textCursorDrawable="@drawable/cursor" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="¿Qué es lo que quieres que llevemos?"
+            android:textColor="#000000" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="@color/divider"
+            app:counterEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/divider">
+            <EditText
+                android:id="@+id/editDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="@dimen/five"
+                android:background="@drawable/rounded_view"
+                android:hint="Indicanos que es lo que deseas que llevemos"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/divider"
+                android:textColorHint="#FFFFFF"
+                android:textCursorDrawable="@drawable/cursor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/iddfecha"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_view"
+                android:text="FECHA"
+                android:textColor="#000000" />
+            <Button
+                android:id="@+id/iddhora"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_view"
+                android:text="HORA"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textVi2w3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forma de pago"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/grupo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tdetalle">
+
+            <RadioButton
+                android:id="@+id/fefectivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Efectivo"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/ftarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Tarjeta"
+                android:textSize="18sp" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/buttonRealizarPedido"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="REALIZAR PEDIDO"
+            android:textColor="@color/white"
+            android:background="@drawable/ronded_button1"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

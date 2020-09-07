@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--item
+        android:id="@+id/listadoPedidos"
+        android:icon="@mipmap/ic_hourglass_full_black_24dp"
+        android:title="Pedidos Pendientes"></item-->
+    <item
+        android:id="@+id/nuevoPedido"
+        android:icon="@mipmap/ic_home_black_24dp"
+        android:title="Nuevo Pedido"></item>
+    <item
+        android:id="@+id/logout"
+        android:icon="@mipmap/ic_power_settings_new_black_24dp"
+        android:title="Cerrar Sesión"></item>
+    <!--item
+        android:id="@+id/pending_requests"
+        android:icon="@mipmap/ic_hourglass_empty_black_24dp"
+        android:title="Pending Requests2"></item>
+    <item
+        android:id="@+id/accepted_requests"
+        android:icon="@mipmap/ic_hourglass_full_black_24dp"
+        android:title="Accepted Requests3"></item>
+    <item
+        android:id="@+id/completed_rides"
+        android:icon="@mipmap/ic_thumb_up_black_24dp"
+        android:title="Completed Rides4"></item>
+    <item
+        android:id="@+id/cancelled"
+        android:icon="@mipmap/ic_cancel_black_24dp"
+        android:title="Cancelled5"></item>
+    <item
+        android:id="@+id/profile"
+        android:icon="@mipmap/ic_account_circle_black_24dp"
+        android:title="Profile6"></item-->
+</menu>

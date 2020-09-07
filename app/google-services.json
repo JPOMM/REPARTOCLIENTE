@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "214288582867",
+    "firebase_url": "https://gmapsnh11.firebaseio.com",
+    "project_id": "gmapsnh11",
+    "storage_bucket": "gmapsnh11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214288582867:android:f02abc4b7a87a3aa",
+        "android_client_info": {
+          "package_name": "com.efienza.cliente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214288582867-tladas0f1kg0f73fd0054oidqrjt821b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUZyFkaV70VuIMOO52Y0mQVPp4qgVXjEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214288582867-tladas0f1kg0f73fd0054oidqrjt821b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
